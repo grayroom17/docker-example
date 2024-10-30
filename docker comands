@@ -2,3 +2,8 @@ docker version
 docker ps       //показывает все запущенные контейнеры
 docker ps -a    //c опцией -a показывает также остановленные контейнеры
 docker images   //показывает установленные образы
+
+docker run hello-world      //скачает(если еще не установлен) и запустит образ hello-world
+docker pull hello-world     //скачает образ
+docker rm {container-id}    //удалит один или несколько контейнеров по указанным id
+docker rm {container-name}  //удалит один или несколько контейнеров по указанным именам контейнеров
