@@ -10,10 +10,10 @@ docker run -d --name {custom-container-name} {image-name}       //запусти
 docker run -d -p {external-port}:{internal-port} {image-name}   //запустит контейнер с маппингом внешнего и внутреннего порта
 docker run -d -p {external-port}:{internal-port} -v {external-dir}:{internal-dir} {image-name}  //запустит контейнер с маппингом внешнего и внутреннего томов
 
-
 docker pull hello-world                     //скачает образ
 docker rm {container-id}                    //удалит один или несколько контейнеров по указанным id
 docker rm {container-name}                  //удалит один или несколько контейнеров по указанным именам контейнеров
 docker container prune                      //удалит все остановленные контейнеры
-docker stop {conmainer-name-or-id}          //остановит запущенный контейнер
-docker exec -it {conmainer-name-or-id} bash //создаст дополнительный процесс в контейнере(в данном случае командную строку bash)
+docker stop {container-name-or-id}          //остановит запущенный контейнер
+docker exec -it {container-name-or-id} bash //создаст дополнительный процесс в контейнере(в данном случае командную строку bash)
+docker container inspect {container-name-or-id}
