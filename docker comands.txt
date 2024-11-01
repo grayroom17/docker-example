@@ -17,3 +17,5 @@ docker container prune                      //удалит все останов
 docker stop {container-name-or-id}          //остановит запущенный контейнер
 docker exec -it {container-name-or-id} bash //создаст дополнительный процесс в контейнере(в данном случае командную строку bash)
 docker container inspect {container-name-or-id}
+
+docker build {relative-path-to-dockerfile} -t {image-name}:{tag}
